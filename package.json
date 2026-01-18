@@ -1,0 +1,28 @@
+{
+  "name": "@tac0de/threadkeeper-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for verbatim notes and teaching-on-request, without code generation.",
+  "type": "module",
+  "bin": {
+    "threadkeeper-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.13.3",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.2",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
